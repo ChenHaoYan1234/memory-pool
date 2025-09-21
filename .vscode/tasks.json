@@ -6,7 +6,22 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "gcc -g ${workspaceFolder}/main.c ${workspaceFolder}/mem.c -I${workspaceFolder}/includes -o main"
+            "command": "make all",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "make clean",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
         }
     ]
 }
