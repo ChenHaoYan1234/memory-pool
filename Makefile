@@ -1,10 +1,10 @@
 all: main
 
 main: main.o mem.o
-	gcc -o $@ $^
+	gcc -g -o $@ $^
 
 %.o: %.c
-	gcc -c -I./includes -o $@ $<
+	gcc -g -c -I./includes -o $@ $<
 
 clean:
 	rm -f *.o main
